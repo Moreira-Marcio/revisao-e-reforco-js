@@ -32,8 +32,8 @@ separador();
 
 
 function calcular(valor1,valor2) {
-    let resultado = valor1 - valor2;
-    return resultado;
+    let soma = valor1 - valor2;
+    return soma;
 
 }
 
@@ -44,3 +44,22 @@ let resultado2 = calcular(15, 10);
 //3- apresente os resultados no console
 console.log(`Resultado 1: ${resultado1}`); 
 console.log(`Resultado 2: ${resultado2}`); 
+
+separador();
+
+// sintaxe moderna função flecha/seta(arrow function). Nesta sintaxe a ordem de declaração importa
+
+const exemplo3 = () => {
+    console.log("Arrow function");
+};
+
+exemplo3 (); //chamada deve ser feita apos a declaração
+
+const saudacao = (nome) => {
+    console.log ("ola "+nome);
+
+};
+
+saudacao("joao");
+saudacao("alana");
+saudacao("gabriel");
