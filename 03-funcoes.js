@@ -71,3 +71,14 @@ separador();
 //com retorno implicito
 const calcularMetade = valor => valor/2;
 console.log(calcularMetade(10));
+
+
+separador();
+
+// exercicio de refaturacao
+
+//reescreva a funcao do exercicio anterior usando a sintaxe de arrow function
+
+const calculoFlecha = (valor1,valor2) => valor1 + valor2;
+
+console.log(calculoFlecha(5,5));
