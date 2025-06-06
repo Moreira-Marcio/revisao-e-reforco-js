@@ -20,3 +20,7 @@ mensagem1 += "/" + estado + ".";
 
 console.log(mensagem1);
 //template strings/literal 
+
+let mensagem2 = `meu nome é ${nome} ${sobrenome} , tenho ${idade} anos, moro em ${cidade}/${estado}.Sou ${idade>=18 ? "maior" : "menor"} de idade.`;
+
+console.log(mensagem2); 
