@@ -28,3 +28,19 @@ exemplo2(); // chamada (sempre apos declarar a função anonima)
 
 separador();
 
+// 1- crie uma função (qualquer sintaxe) que receba dois valores numericos como parametros, calcule a diferença entre esses varoles e retorne o resultado. calculado
+
+
+function calcular(valor1,valor2) {
+    let resultado = valor1 - valor2;
+    return resultado;
+
+}
+
+//2- chame a função pelo menos duas vezes passando valores diferentes e guardando resultados em variaveis de escopo global
+let resultado1 = calcular(20, 10);
+let resultado2 = calcular(15, 10);
+
+//3- apresente os resultados no console
+console.log(`Resultado 1: ${resultado1}`); 
+console.log(`Resultado 2: ${resultado2}`); 
