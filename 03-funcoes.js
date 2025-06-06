@@ -55,11 +55,19 @@ const exemplo3 = () => {
 
 exemplo3 (); //chamada deve ser feita apos a declaração
 
-const saudacao = (nome) => {
-    console.log ("ola "+nome);
-
-};
+const saudacao = nome => console.log ("ola "+nome);
 
 saudacao("joao");
 saudacao("alana");
 saudacao("gabriel");
+
+separador();
+
+//com retorno explicito
+//const calcularMetade = (valor) => {
+// return valor/2;
+//}
+
+//com retorno implicito
+const calcularMetade = valor => valor/2;
+console.log(calcularMetade(10));
