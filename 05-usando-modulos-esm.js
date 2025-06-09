@@ -29,12 +29,14 @@ for(const aluno of alunos){
         console.log(alunos);
 }
 
-separador
+separador();
 //acessandop recursos do modulo'dados.js'
 console.log(pessoa.nome);
 console.log(livro);
 console.log(personagens);
 
+
+separador();
 /*exercicio
 1- crie um arquivo chamado "funcoes.js"dentro da pasta "modulos esm"
 2- dentro dele, programe 3 funções(usando arrow function):
