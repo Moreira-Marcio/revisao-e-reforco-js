@@ -50,4 +50,4 @@ separador();
 
 console.log(maiusculoConvert('vai corinthians'));
 console.log(minusculoConvert('QUALQUER COISA'));
-console.log(formatMoeda(3500))
+console.log(formatMoeda(3500));
