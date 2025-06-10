@@ -8,15 +8,41 @@
 <body>
     <h1>Acessando modulos</h1>
     <hr>
-    <ul id="lista alunos">
-
+    <ul id="lista-alunos">
+       
     </ul>
 
     
 
     <script type="module">
+        'use restrict';
         import {alunos} from "./modulos-esm/dados.js";
         console.log(alunos);
+
+        //usando o seleção de DOM
+
+        //const lista = document.getElementById("lista-alunos");
+
+        const lista = document.querySelector("#lista-alunos");
+
+        //Use o loop para percorrer os elementos da array
+
+        
+        for(const aluno of alunos) {
+           // criando elemento <li>
+           let item = document.createElement("li");
+
+           // adicionando conteudo ao elemento li criado
+           item.innerHTML = aluno;
+           
+           //inserir o elemento criado com o nome do aluno na lista 
+           lista.appendChild(item);
+    
+        };
+
+       
+    
+
 
         // programe aqui as instruções necessarias para fazer com que os dados do array alunos, sejam inseridos como itens (tag li) dentro da lista não-ordenada chamada lista-alunos
         /*
