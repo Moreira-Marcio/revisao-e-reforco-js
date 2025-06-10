@@ -36,7 +36,7 @@ const compra = {
   codigoPedido: "123xyz",
   produto: ["bengala", "terno", "sapato"],
   total: 2760.66,
-  nome: "paulo",
+  nome: "paulo", //sobrescrevendo ua propriedade que veio do spread
 };
 
 console.log(compra);
