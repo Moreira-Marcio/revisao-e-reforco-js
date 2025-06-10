@@ -10,7 +10,9 @@ import { saudacao, clientes,separador } from  "./modulos-esm/exemplos.js";
 // uso de um alias/apelido para evitar o conflito e nomes
 import{pessoa,livro,alunos as personagens} from "./modulos-esm/dados.js"
 
-import { maiusculoConvert,minusculoConvert, formatMoeda} from './modulos-esm/funcoes.js';
+//import { maiusculoConvert,minusculoConvert, formatMoeda} from './modulos-esm/funcoes.js';
+
+import * as recursos from "./modulos-esm/funcoes.js"; // * usado para pegar tudo que esta dentro do arquivo chamado e o (as) usado para dar um apelido
 
 
 saudacao("fulano de tal");
@@ -48,6 +50,6 @@ separador();
 3- exporte-as como modulos
 4- no arquivo 05 importe ultilize estas funcoes passando textos e valores para testes  */
 
-console.log(maiusculoConvert('vai corinthians'));
-console.log(minusculoConvert('QUALQUER COISA'));
-console.log(formatMoeda(3500));
+console.log(recursos.maiusculoConvert('vai corinthians'));
+console.log(recursos.minusculoConvert('QUALQUER COISA'));
+console.log(recursos.formatMoeda(3500));
