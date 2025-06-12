@@ -48,3 +48,25 @@ separador();
 const titulos = cursos.map((curso) => curso.titulo);
 
 console.log(titulos);
+
+separador();
+
+/*exercicio 
+usando o map para gerar um novo array contendo somente os precos dos curasos calculados com um desconto de 10% */
+
+const valores = cursos.map((curso) => curso.preco - curso.preco * 0.1);
+
+console.log(valores);
+
+separador();
+
+//exemplo 3: gerar um novo array completo mas com os preços atualizados com desconto
+
+const cursosComDesconto = cursos.map((curso) => {
+  return {
+    ...curso, //spread das propriedades do curso
+    preco: curso.preco - curso.preco * 0.1,
+  };
+});
+
+console.log(cursosComDesconto);
