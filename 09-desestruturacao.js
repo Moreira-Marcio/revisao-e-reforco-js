@@ -164,3 +164,16 @@ console.log(localidade);
 console.log(numeroDoEndereco);
 console.log(bairro);
 console.log(atendimento());
+
+separador();
+
+// desestruturação de parametros de função
+
+function processarPedido([produto, preco, marca]) {
+  console.log("produto: " + produto);
+  console.log("preço: " + preco);
+  console.log("marca: " + marca);
+}
+
+const pedido = ["tv ", 1500, "sony"];
+processarPedido(pedido);
