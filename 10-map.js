@@ -1,7 +1,7 @@
 "use strict";
 
 import { separador } from "./modulos-esm/exemplos.js";
-
+import cursos from "./modulos-esm/cursos.js";
 // 10-map.js
 
 /* map (mapear, mapeamento - transformar/gerar em outra coisa) 
@@ -33,3 +33,18 @@ console.log(textos);
 const exibirTexto = textos.map((texto) => texto.toLowerCase());
 
 console.log(exibirTexto);
+
+separador();
+
+console.log("==lista completa de cursos ==");
+console.log(cursos);
+console.log("==============================");
+
+separador();
+
+// exemplos 2:  gerar um novo array contendo somente os titulos dos cursos
+
+//const titulos = cursos.map((curso) => {return curso.titulo})
+const titulos = cursos.map((curso) => curso.titulo);
+
+console.log(titulos);
