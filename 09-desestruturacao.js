@@ -180,6 +180,10 @@ processarPedido(pedido);
 
 separador();
 
+//const exibirDados = ({titulo, ano}) => {
+//console.log(`filme: ${titulo} - ano: ${filme.ano} \n`);
+//};
+
 const exibirDados = (filme) => {
   console.log(`filme: ${filme.titulo} - ano: ${filme.ano} \n`);
 };
