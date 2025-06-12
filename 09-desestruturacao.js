@@ -177,3 +177,22 @@ function processarPedido([produto, preco, marca]) {
 
 const pedido = ["tv ", 1500, "sony"];
 processarPedido(pedido);
+
+separador();
+
+const exibirDados = (filme) => {
+  console.log(`filme: ${filme.titulo} - ano: ${filme.ano} \n`);
+};
+
+const filme1 = {
+  titulo: "O Hobbit",
+  ano: 2012,
+};
+
+const filme2 = {
+  titulo: "O Senhior dos Aneis",
+  ano: 2001,
+};
+
+exibirDados(filme1);
+exibirDados(filme2);
