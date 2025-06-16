@@ -37,6 +37,6 @@ console.log(media);
 //mostre log
 const somaDosPrecosFront = cursos
   .filter(({ categoria }) => categoria === "Front-end")
-  .reduce((acumulador, { preco }) => acummulador + preco, 0);
+  .reduce((acumulador, { preco }) => acumulador + preco, 0);
 
 console.log("soma dos precos dos cursos Front" + somaDosPrecosFront);
